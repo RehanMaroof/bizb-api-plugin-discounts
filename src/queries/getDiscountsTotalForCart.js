@@ -31,7 +31,7 @@ export default async function getDiscountsTotalForCart(context, cart) {
 
   // Remove nulls
   discounts = discounts.filter((val) => !!val);
-
+console.log("test console")
   // Discounts are additive, if we allow more than one
   return {
     discounts,
