@@ -7,7 +7,7 @@ import getDiscountsTotalForCart from "../queries/getDiscountsTotalForCart.js";
  * @returns {undefined}
  */
 export default async function setDiscountsOnCart(context, cart) {
-  console.log("cart in setDiscountsOnCart", cart);  
+  console.log("cart in setDiscountsOnCart");  
   const { total } = await getDiscountsTotalForCart(context, cart);
   console.log("total in setDiscountsOnCart", total);
   cart.discount = total;
